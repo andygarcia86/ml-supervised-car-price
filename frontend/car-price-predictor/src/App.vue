@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import CarPriceForm from './components/CarPriceForm.vue'
-
-function handlePrediction(data: { make: string; model: string; year: number; mileage: number; fuelType: string; transmission: string; engineSize: number; doors: number }) {
-  console.log('Predicting price for:', data)
-  // TODO: Send to ML backend
-}
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <main class="app-container">
-    <CarPriceForm @submit="handlePrediction" />
+    <RouterView />
   </main>
 </template>
 
